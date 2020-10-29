@@ -24,6 +24,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${DALI_COMPILE_FLAGS}")
 
 link_directories(CustomOp "${DALI_LIB_DIR}")
 
-cuda_add_library(CustomOp SHARED file_reader.cc file_file_loader.cc tiff_decoder.cc tiff_libtiff.cc)
+cuda_add_library(CustomOp SHARED src/file_reader.cc src/file_file_loader.cc src/tiff_decoder.cc src/tiff_libtiff.cc)
 target_link_libraries(CustomOp dali dali_operators TIFF::TIFF)
 
