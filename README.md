@@ -3,8 +3,8 @@ Here you will find two custom operators for DALI:
  * a modified file reader that supports segmentation scenario
  * a modified TIFF reader that supports compressed minisblack's images
  
- For more information, there is this blog post:
-  
+For more information, there is this blog post:
+https://www.kindoblue.nl/custom-dali-operators/  
 
 ### Installation
 
@@ -13,7 +13,7 @@ After having installed CUDA you should create a virtualenv and install the depen
 Like this:
  * `mkvirtualenv dali -ppython3`
  * `workon dali`
- * `export CUDA_HOME=/usr/local/cuda-11.0`  <-- here your CUDA dir
+ * `export CUDA_HOME=/usr/local/cuda-11.0`  ⟵ here your CUDA dir
  * `export CFLAGS="-I$CUDA_HOME/include`
  * `pip install  -r requirements.txt`
 
